@@ -38,7 +38,8 @@ const URL = 'https://www.imdb.com/title/tt8111088/';
     let releaseDate = $('a[title="See more release dates"]').text().trim();
     ///var grabs source img from console within a tag with img from attribute source
     let poster = $('div[class="poster"] > a > img').attr('src');
-    ///$('div[class="title_wrapper"] a[href^="/genre/"').text()
+    ///$('div[class="title_wrapper"] a[href^="/search/title?genres"]').text()
+    ///text form of the array to validate information is being grabbed
 
     let genres = [];
     $('div[class="title_wrapper"] a[href^="/search/title?genres"]').each((i, elm) => {
